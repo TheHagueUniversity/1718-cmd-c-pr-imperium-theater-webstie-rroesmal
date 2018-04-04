@@ -1,0 +1,450 @@
+html
+{ height: 100%;
+  width:100%;
+}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font-family: Myriad Pro;
+  background: #FFF;
+  color: #555;}
+
+h1, h2, h3, h4, h5, h6 
+{ color: black;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;}
+
+h1, h2, h3
+{
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;}
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #009FBC;}
+
+a:hover
+{ text-decoration: none;}
+
+ul
+{ margin: 2px 0 22px 17px;}
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#header
+{ 
+    background: #F4F4F4;
+    box-shadow: 0 4px 22px -2px grey;
+}
+
+#Zwartbalk
+{
+    background: black;
+    height: 10px;
+} 
+
+#WelkomsBericht 
+{	
+    background: black;
+    height: 25px;
+}  
+
+#WelkomsBericht strong 
+{	
+    color: white;
+    margin-left: 100px;
+}  
+
+.float-right{
+    float:right;
+}
+
+.float-left{
+    float:left;
+}
+
+.block-button{
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    line-height: 12px;
+    color:black;
+    display:block;
+    text-decoration: none;
+    margin:10px;
+
+}
+a.block-button:hover{
+    background-color:black;
+    color:white;
+}
+
+.block-content{    
+    padding: 20px 0;
+}
+
+/* maakt de breedte van element 50% */
+.width-50{
+    width:50%;
+    float:left;
+}
+
+.content-breaker{
+    display:block;
+    height:32px;
+    width: 100%;
+    background-color: #C7C5C3;
+    box-shadow: 0 4px 22px -2px grey;
+    margin: 10px 0;
+}
+
+/*centreerd images*/
+.image-center{
+    display:block;
+    margin:auto;
+}
+
+#slider
+{ background: transparent url(../images/homeslide1.jpg) no-repeat;
+  /*width: 870px;*/
+  width: 100%;
+  display: block;
+  height: 480px;
+  margin-bottom: 20px; }
+
+#logo
+{ /*width: 880px;*/
+    position: relative;
+    height: 140px;
+    background: transparent;}
+
+#logo img.logo-image
+{ 
+    margin-top: 20px;
+    margin-left: 40px;}
+
+.ribbon{
+    position:absolute;
+    top:0px;
+    right:0;
+    margin-right: 100px;
+}
+
+#menubar
+{ /*width: 880px;*/
+    /*height: 35px;*/
+    width: 89%;
+    background-color: #C7C5C3;
+    padding-left: 11%;
+} 
+
+/*clears both sides of a element*/
+.clearfix{
+    display:block;
+    clear:both;
+}
+
+ul#menu
+{  margin-left: 12%;}
+
+ul#menu li
+{ min-width: 200px;
+  float: left;
+  padding: 0 0 0 15px;
+  list-style: none;
+  margin: 1px 2px 0 0;
+  /*float: left;
+padding: 0 0 0 50px;
+list-style: none;
+margin: 1px 2px 0 0;*/
+  background: transparent;}
+
+ul#menu li a
+{ 
+    display: block; 
+    float: left; 
+    height: 20px;
+    padding: 6px 35px 5px 28px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background: transparent;} 
+
+ul#menu li a:hover
+{ color: black;
+  background: white;}
+
+#site_content
+{ 
+    width: 100%;	
+    max-width: 780px;
+    margin: 20px auto 0 auto;
+    padding: 0 0 10px 0;
+} 
+
+
+#content
+{ text-align: left;
+  /*width: 620px;*/
+  padding: 0 0 0 5px;
+  float: left;}
+
+#content ul
+{ margin: 2px 0 22px 0px;}
+
+#content ul li,
+{ list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 0 0; 
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;}
+
+#footer
+{ 
+    -moz-box-shadow:0 4px 22px -2px grey;
+    -webkit-box-shadow:0 4px 22px -2px grey;
+    box-shadow: 0 4px 22px -2px black;
+    width: 100%;
+    font-size: 100%;
+    //height: 80px;
+    padding: 28px 0 5px 0;
+    background-color:#C7C5C3;
+    /*border-top: 2px solid #A21FA2;*/
+    /*color: #FFF;*/
+    clear:both;
+}
+
+.footermenu a{
+    text-decoration:none;
+    color:black;
+}
+
+.footermenu>li{
+    width:19%;
+    font-size:12px;
+    line-height:12px;
+    float:left;    
+    list-style-type: none;
+    text-align:center;
+    padding-left: 6%;
+}
+
+.footer-contact{
+    text-align:left;
+    padding-left:5px;
+}
+
+.hide{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+.input-text{
+    padding:4px;
+    border-radius:3px;
+    border: 1px solid black;
+}
+.input-submit{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 12px;
+    color: black;
+    text-decoration: none;
+    background-color:transparent;
+}
+
+.input-submit:hover{
+    background-color:lightblue;
+}
+
+#footer p
+{ line-height: 1.7em;
+  padding: 0 0 10px 0;}
+
+#footer a:hover
+{ color: #FFF;
+  text-decoration: none;}
+
+#copyrightfooter{
+    background-color:black;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.form_settings
+{ margin: 15px 0 0 0;}
+
+.form_settings p
+{ padding: 0 0 4px 0;}
+
+.form_settings span
+{ float: left; 
+  width: 200px; 
+  text-align: left;}
+
+.form_settings input, .form_settings textarea
+{ padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+
+.form_settings .submit
+{ font: 100% arial; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #A21FA2; 
+  color: #FFF;}
+
+.form_settings textarea, .form_settings select
+{ font: 100% arial; 
+  width: 299px;}
+
+.form_settings select
+{ width: 310px;}
+
+.form_settings .checkbox
+{ margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;}
+
+.separator
+{ width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;}
+
+table
+{ margin: 10px 0 30px 0;}
+
+table tr th, table tr td
+{ background: #A21FA2;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;}
+
+table tr td
+{ background: #E5E5DB;
+  color: #47433F;
+  border-top: 1px solid #FFF;}
+
+/* ---- breadcrumbs styling ------*/
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/*------- Reservering styling ----------*/
+
+.reserveringplaatje {
+
+    /*border: 1px solid black;*/
+    width: 25%;
+    float: left;
+    position:relative;
+    margin: 2% 4.16%;
+}
+
+.reservering-beschrijving{
+    position:absolute;
+    top:0;
+    background-color:white;
+    opacity: 0.7;
+    color: black;
+    width: 92%;
+    padding: 3px;
+}
+
+.reserveringplaatje img {
+
+    height: auto;
+    width: 100%;
+    display: block;
+
+}
+
+/* reserveringsform */
+
+.reserveringsform {
+
+    width: 50%;
+    text-align: right;
+}
+
+.input-reserveren {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 12px;
+    color: black;
+    text-decoration: none;
+    background-color:transparent;
+}
+
+.Gegevensinvoer {
+    background-color: grey;
+    padding: 10px;
+}
+
+.Gegevensinvoer input{
+    margin: 5px 0;
+    width:70%;
+}
+
+.Gegevensinvoer select{
+    margin: 5px;
+}
+
+.Gegevensinvoer .input-reserveren{
+    width:40%;
+}
+
+.payout {
+    margin-top: 100px;
+}
