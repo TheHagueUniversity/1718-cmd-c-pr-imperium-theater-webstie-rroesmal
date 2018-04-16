@@ -38,9 +38,13 @@ ul
   margin-right: auto;}
 
 #header
-{ 
+{ z-index:3;
     background: #F4F4F4;
     box-shadow: 0 4px 22px -2px grey;
+	/*sticky header*/
+	position: fixed;
+    width: 100%;
+top:0;
 }
 
 #Zwartbalk
@@ -109,6 +113,61 @@ a.block-button:hover{
     display:block;
     margin:auto;
 }
+
+.image-responsive{
+	display:block;
+	width:100%;
+}
+
+.voorstelling{
+	width:25%;
+	float:left;
+	margin:3%;
+}
+.voorstelling-leesmeer{
+	text-align:right;
+}
+
+.galerij-item{
+	width:33%;
+	float:left;
+}
+
+.contactform{
+text-align:right;
+padding-top:20px;
+padding-right:5px;
+}
+
+.contactform input, .contactform textarea, .doneerform input{
+    margin: 5px 0;
+    width: 65%;
+	padding:2px;
+}
+
+.text-right{
+text-align:right;
+}
+
+.padding-top-20{
+padding-top:20px;
+}
+
+
+.contactform input[type=submit], .doneerform input[type=submit]{
+padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 12px;
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    width: 40%;    
+	margin: 5px 0;
+}
+
+
+
 
 #slider
 { background: transparent url(../images/homeslide1.jpg) no-repeat;
@@ -261,6 +320,7 @@ ul#menu li a:hover
     color: black;
     text-decoration: none;
     background-color:transparent;
+	width: 80px;
 }
 
 .input-submit:hover{
@@ -351,7 +411,7 @@ table tr td
 
 /* Style the list */
 ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 240px 16px 10px 16px;
     list-style: none;
 }
 
@@ -447,4 +507,8 @@ ul.breadcrumb li a:hover {
 
 .payout {
     margin-top: 100px;
+}
+
+.margin-left-20{
+	margin-left:20px;
 }

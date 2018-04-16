@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>Imperium in progress</title>
         <link rel="stylesheet" type="text/css" href="style/style.css" />
+		<script src="js/code.js"></script>
     </head>
     <body>
         <div id="main">
@@ -24,15 +25,18 @@
                 </div>	  
                 <div id="menubar">
                     <ul id="menu">
-                        <li><a href="reserveren.html">Over Imperium</a></li>
-                        <li><a href="reserveren.html">Voorstellingen</a></li>
-                        <li><a href="reserveren.html">Gallerij</a></li>
+                        <li><a href="over.html">Over Imperium</a></li>
+                        <li><a href="voorstellingen.html">Voorstellingen</a></li>
+                        <li><a href="gallerij.html">Gallerij</a></li>
                         <li><a href="reserveren.html">Reserveren</a></li>
-                        <li><a href="reserveren.html">Doneren</a></li>
+                        <li><a href="doneren.html">Doneren</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
             </div>
+			<!--lege breadcrum in index pagina ivm met de positioneren van de gehele website en de sticky header-->
+            <ul class="breadcrumb">
+            </ul>
             <div id="site_content">
                 <div id="slider"></div>
                 <div id="content">
@@ -73,7 +77,7 @@
                     <div class="content-breaker"></div>
                     <div class="block-content">
                         <div class="width-50">
-                            <div class="nieuwsbrief-verificatie">
+                            <div id="nieuwsbrief-verificatie">
                                 <div class="block-text">
                                     <h1>Nieuwsbrief</h1>
                                     <p>Wilt u op de hoogte gehouden worden van Toneelgroep Imperium?
@@ -83,14 +87,17 @@
                                         Uw email adres zal alleen worden gebruikt voor het versturen van nieuwsbrieven van en over Toneelgroep Imperium.</p>
                                 </div>
                                 <br>
-                                <form class="nieuwsbrief-form">
+                                <form class="nieuwsbrief-form" >
                                     Email:
                                     <input class="input-text" type="email" required="required" placeholder="Vul uw email in"/>
-                                    <input class="input-submit" type="submit" />
+									
+									<!--submit type weg gehaald ivm met het submitten in javascript zodat de pagina opnieuw laad-->
+                                    <input class="input-submit" value="Verzenden" onclick="return submitNieuwsbriefForm();" />
 
                                 </form>
                             </div>
-                            <!--nog bezig voor javascript--> <div class="aanmeld-bericht hide">
+                            <div id="aanmeld-bericht" class="hide">
+                                <h1>Nieuwsbrief</h1>
 
                                 Bedankt voor het aanmelden voor onze nieuwsbrief!<br>
                                 Vanaf nu houden wij u op de hoogte via onze nieuwsbrieven.
@@ -127,3 +134,4 @@
         </div>
     </body>
 </html>
+
