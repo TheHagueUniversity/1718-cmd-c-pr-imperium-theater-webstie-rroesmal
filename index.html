@@ -8,22 +8,22 @@
     </head>
     <body>
         <div id="main">
-            <div id="header">
+            <div id="header"> <!-- REVIEW: header element -->
                 <div id="1stegedeeltehead">
                     <div id="Zwartbalk">
                         <!-- extra balk voor positionering text -->
                     </div>
                     <div id="WelkomsBericht">
                         <!-- Welkoms text in header 1ste gedeelte -->
-                        <strong>Welkom op de home pagina van Imperium!</strong>
+                        <strong>Welkom op de home pagina van Imperium!</strong><!-- REVIEW: styling moet in CSS -->
                     </div>
                 </div>
                 <div id="logo">
                     <img class="logo-image" src="images/logoheader.png" alt="Logo">
-                    <img class="ribbon" src="images/logoheader2.png"/>
+                    <img class="ribbon" src="images/logoheader2.png"/><!-- REVIEW: afbeelding bedoeld voor styling moeten in CSS -->
                     <!-- <img src="images/header2egedeelte.png" alt="Logo2"> -->
-                </div>	  
-                <div id="menubar">
+                </div>
+                <div id="menubar"><!-- REVIEW: nav element -->
                     <ul id="menu">
                         <li><a href="over.html">Over Imperium</a></li>
                         <li><a href="voorstellingen.html">Voorstellingen</a></li>
@@ -37,17 +37,17 @@
 			<!--lege breadcrum in index pagina ivm met de positioneren van de gehele website en de sticky header-->
             <ul class="breadcrumb">
             </ul>
-            <div id="site_content">
+            <div id="site_content"><!-- REVIEW: main elemenbt -->
                 <div id="slider"></div>
-                <div id="content">
+                <div id="content">  <!-- REVIEW: section element -->
                     <div class="content-breaker"></div>
 
                     <div class="block-content">
                         <div class="width-50">
                             <div class="block-text">
                                 <h1>Nieuwe voorstellingen?!</h1>
-                                <p>Een nieuw seizoen is van start gegaan en dat betekent 
-                                    dus nieuwe voorstellingen. Bekijk de voorstellingen         
+                                <p>Een nieuw seizoen is van start gegaan en dat betekent
+                                    dus nieuwe voorstellingen. Bekijk de voorstellingen
                                     en reserveer nu je kaartjes!</p>
                             </div>
                             <a class="block-button  float-right" href="#">Reserveer</a>
@@ -65,8 +65,8 @@
                         <div class="width-50">
                             <div class="block-text">
                                 <h1>Donateur worden?!</h1>
-                                <p>Wil jij ook dat Toneelgroep Imperium mooie voorstellingen blijft maken? 
-                                    Wil jij de voorstellingen van Toneelgroep Imperium met korting zien? 
+                                <p>Wil jij ook dat Toneelgroep Imperium mooie voorstellingen blijft maken?
+                                    Wil jij de voorstellingen van Toneelgroep Imperium met korting zien?
                                     Of zelfs helemaal gratis?
                                     Word donateur van Toneelgroep Imperium!</p>
                             </div>
@@ -87,10 +87,10 @@
                                         Uw email adres zal alleen worden gebruikt voor het versturen van nieuwsbrieven van en over Toneelgroep Imperium.</p>
                                 </div>
                                 <br>
-                                <form class="nieuwsbrief-form" >
+                                <form class="nieuwsbrief-form" ><!-- REVIEW: form heeft verplichte attributen -->
                                     Email:
                                     <input class="input-text" type="email" required="required" placeholder="Vul uw email in"/>
-									
+
 									<!--submit type weg gehaald ivm met het submitten in javascript zodat de pagina opnieuw laad-->
                                     <input class="input-submit" value="Verzenden" onclick="return submitNieuwsbriefForm();" />
 
@@ -134,4 +134,3 @@
         </div>
     </body>
 </html>
-
