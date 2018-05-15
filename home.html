@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Welkom op de Imperium website!</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+		<script src="js/code.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="1stegedeeltehead">
+                    <div id="Zwartbalk">
+                        <!-- extra balk voor positionering text -->
+                    </div>
+                    <div id="WelkomsBericht">
+                        <!-- Welkoms text in header 1ste gedeelte -->
+                        <strong>Welkom op de home pagina van Imperium!</strong>
+                    </div>
+                </div>
+                <div id="logo">
+                    <img class="logo-image" src="images/logoheader.png" alt="Logo">
+                    <img class="ribbon" src="images/logoheader2.png"/>
+                    <!-- <img src="images/header2egedeelte.png" alt="Logo2"> -->
+                </div>	  
+                <div id="menubar">
+                    <ul id="menu">
+                        <li><a href="over.html">Over Imperium</a></li>
+                        <li class="subNav"><a href="voorstellingen.html">Voorstellingen</a>
+						<ul id="submenu">
+							<li><a href="liefdeslied.html">Liefdes Lied</a></li><br>
+							<li>Papieren Kroon</li><br>
+							<li>Prinses van Bourgondi&euml;</li><br>
+							<li>Zinsbegoocheling</li><br>
+							<li>Vrede</li><br>
+							<li>Moord in de kerststal</li><br>
+						</ul>
+						</li>
+                        <li><a href="gallerij.html">Gallerij</a></li>
+                        <li><a href="reserveren.html">Reserveren</a></li>
+                        <li><a href="doneren.html">Doneren</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+			<!--lege breadcrum in index pagina ivm met de positioneren van de gehele website en de sticky header-->
+            <ul class="breadcrumb">
+            </ul>
+            <div id="site_content">
+                <div id="slider"></div>
+				<a class="block-button  float-right" href="gallerij.html">Naar Gallerij</a>
+                <div id="content">
+                    <div class="content-breaker"></div>
+
+                    <div class="block-content">
+                        <div class="width-50">
+                            <div class="block-text">
+                                <h1>Nieuwe voorstellingen?!</h1>
+                                <div class="boxshadowdiv"><p>Een nieuw seizoen is van start gegaan en dat betekent 
+                                    dus nieuwe voorstellingen. Bekijk de voorstellingen         
+                                    en reserveer nu je kaartjes!</p></div>
+                            </div>
+                            <a class="block-button  float-right" href="reserveren.html">Reserveer</a>
+                        </div>
+                        <div class="width-50 block-image"> <img class="image-center" src="images/voorbeeld1.png"> </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="content-breaker"></div>
+
+                    <div class="block-content">
+                        <div class="width-50 block-image"> <img class="image-center" src="images/doneer.png"> </div>
+
+                        <div class="width-50">
+                            <div class="block-text">
+                                <h1>Donateur worden?!</h1>
+                               <div class="boxshadowdiv"><p>Wil jij ook dat Toneelgroep Imperium mooie voorstellingen blijft maken? 
+                                    Wil jij de voorstellingen van Toneelgroep Imperium met korting zien? 
+                                    Of zelfs helemaal gratis?
+                                    Word donateur van Toneelgroep Imperium!</p></div>
+                            </div>
+                            <a class="block-button float-left" href="doneren.html">Doneer</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="content-breaker"></div>
+                    <div class="block-content">
+                        <div class="width-50">
+                            <div id="nieuwsbrief-verificatie">
+                                <div class="block-text">
+                                    <h1>Nieuwsbrief</h1>
+                                   <div class="boxshadowdiv"><p>Wilt u op de hoogte gehouden worden van Toneelgroep Imperium?
+                                        Als u hier uw gegevens opgeeft, dan krijgt u enkele weken voor elke premi&egrave;re bericht met informatie over de voorstelling en de mogelijkheid te reserveren.
+                                        Nadat u uw gegevens heeft verstuurd, krijgt u eerst een email bericht met daarin een link om te bevestigen dat u onze berichten wilt ontvangen.
+                                        Pas nadat u op die link heeft geklikt bent u geabonneerd op onze nieuwsbrieven. Uitschrijven kan met een link die in elke nieuwsbrief wordt opgenomen.
+                                        Uw email adres zal alleen worden gebruikt voor het versturen van nieuwsbrieven van en over Toneelgroep Imperium.</p></div>
+                                </div>
+                                <br>
+                                <form class="nieuwsbrief-form" >
+                                    Email:
+                                    <input class="input-text" type="email" required="required" placeholder="Vul uw email in"/>
+									
+									<!--submit type weg gehaald ivm met het submitten in javascript zodat de pagina opnieuw laad-->
+                                    <input class="input-submit" value="Verzenden" onclick="return submitNieuwsbriefForm();" />
+
+                                </form>
+                            </div>
+                            <div id="aanmeld-bericht" class="hide"> <!--verbergt de form en laat een verificatie zien-->
+                                <h1>Nieuwsbrief</h1>
+
+                                Bedankt voor het aanmelden voor onze nieuwsbrief!<br>
+                                Vanaf nu houden wij u op de hoogte via onze nieuwsbrieven.
+                            </div>
+
+                        </div>
+                        <div class="width-50 block-image"> <img class="image-center" src="images/email.png"> </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div id="footer" >
+                <ul class="footermenu">
+                    <li><img class="float-left" src="images/logolinksonder.png"/> <div class="float-left footer-contact">
+                            Theater imperium<br><br>
+                            Oude vest 33e<br>
+                            2312 XR Leiden<br>
+                            071 5141035</div></li>
+                    <li>
+                        <p><a href="contact.html">Contact</a></p></li>
+                    <li>Social Media<br><br>
+                        <img class="" src="images/fb.png"/>
+                        <img class="" src="images/insta.png"/>
+                        <img class="" src="images/twitter.png"/>
+                        <img class="" src="images/yt.png"/>
+                    </li>
+                    <li><img src="images/logorechtsonder.png"</li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div id="copyrightfooter"><p>&copy; by Roy Roesmal 2018 </p></div>
+        </div>
+    </body>
+</html>
+

@@ -108,6 +108,18 @@ a.block-button:hover{
     margin: 10px 0;
 }
 
+.boxshadowdiv{
+	border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 5px;
+}
+
+/*padding van overimperium plaatje */
+.overimperium {
+padding-left: 20px;
+
+}
+
 /*centreerd images*/
 .image-center{
     display:block;
@@ -166,9 +178,6 @@ padding: 5px;
 	margin: 5px 0;
 }
 
-
-
-
 #slider
 { background: transparent url(../images/homeslide1.jpg) no-repeat;
   /*width: 870px;*/
@@ -203,7 +212,7 @@ padding: 5px;
     padding-left: 11%;
 } 
 
-/*clears both sides of a element*/
+/*cleared beide sides van een element zodat de positionering beter gaat*/
 .clearfix{
     display:block;
     clear:both;
@@ -264,6 +273,21 @@ ul#menu li a:hover
   padding: 0 0 4px 25px;
   line-height: 1.5em;}
 
+  
+/* zelfgemaakte dropdown */  
+.subNav ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10;
+  white-space: nowrap;
+  background: #C7C5C3;
+}
+
+.subNav:hover ul{
+  display: block;
+}
+  
 #footer
 { 
     -moz-box-shadow:0 4px 22px -2px grey;
@@ -409,9 +433,11 @@ table tr td
 
 /* ---- breadcrumbs styling ------*/
 
-/* Style the list */
+
+
+/* Style the list + positioning of breadcrumb */
 ul.breadcrumb {
-    padding: 240px 16px 10px 16px;
+    padding: 240px 16px 10px 100px;
     list-style: none;
 }
 
@@ -488,7 +514,7 @@ ul.breadcrumb li a:hover {
 }
 
 .Gegevensinvoer {
-    background-color: grey;
+    background-color: #C7C5C3;
     padding: 10px;
 }
 

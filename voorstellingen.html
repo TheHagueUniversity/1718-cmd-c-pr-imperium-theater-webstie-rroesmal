@@ -2,7 +2,7 @@
 <html lang="nl">
     <head>
         <meta charset="utf-8"/>
-        <title>Imperium in progress</title>
+        <title>Voorstellingen</title>
         <link rel="stylesheet" type="text/css" href="style/style.css" />
     </head>
     <body>
@@ -10,32 +10,37 @@
             <div id="header">
                 <div id="1stegedeeltehead">
                     <div id="Zwartbalk">
-                        <!-- extra balk voor positionering text -->
                     </div>
-                    <div id="WelkomsBericht">
-                        <!-- Welkoms text in header 1ste gedeelte -->
-                        <strong>Welkom op de home pagina van Imperium!</strong>
+					<div id="WelkomsBericht">
                     </div>
                 </div>
                 <div id="logo">
-                    <img class="logo-image" src="images/logoheader.png" alt="Logo">
+                    <a href="home.html"><img class="logo-image" src="images/logoheader.png" alt="Logo"></a><!-- escape hatch naar home -->
                     <img class="ribbon" src="images/logoheader2.png"/>
                     <!-- <img src="images/header2egedeelte.png" alt="Logo2"> -->
                 </div>	  
                 <div id="menubar">
                     <ul id="menu">
-                        <li><a href="reserveren.html">Over Imperium</a></li>
-                        <li><a href="reserveren.html">Voorstellingen</a></li>
-                        <li><a href="reserveren.html">Gallerij</a></li>
+                        <li><a href="over.html">Over Imperium</a></li>
+                        <li class="subNav"><a href="voorstellingen.html">Voorstellingen</a>
+						<ul id="submenu">
+							<li><a href="liefdeslied.html">Liefdes Lied</a></li><br>
+							<li>Papieren Kroon</li><br>
+							<li>Prinses van Bourgondi&euml;</li><br>
+							<li>Zinsbegoocheling</li><br>
+							<li>Vrede</li><br>
+							<li>Moord in de kerststal</li><br>
+						</ul>
+                        <li><a href="gallerij.html">Gallerij</a></li>
                         <li><a href="reserveren.html">Reserveren</a></li>
-                        <li><a href="reserveren.html">Doneren</a></li>
+                        <li><a href="doneren.html">Doneren</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
             </div>
             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><b>Reserveren</b></li>
+                <li><a href="home.html">Home</a></li>
+                <li><b>Voorstellingen</b></li>
             </ul>			
 			
             <div id="site_content">
@@ -43,24 +48,24 @@
                     <div class="block-content">
 						<div class="voorstelling">
 						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
+						<img class="image-responsive image-center" src="images/newvoorstelling1.png">
+						<p>In Liefdeslied van Peer Wittenbols treffen vier mensen elkaar in een ziekenhuis in verbouwing.</p>
+						<p class="voorstelling-leesmeer"><a href="liefdeslied.html"><b>Lees meer</b></a></p>
+						
+						</div>
+						
+						<div class="voorstelling">
+						<p><b>Papieren Kroon</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling2.png">
+						<p>Toneelgroep Imperium brengt voor haar zestigste verjaardag Hendrik VI van Shakespeare ten tonele.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
 						
 						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
-						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
-						
-						</div>
-						
-						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
+						<p><b>Prinses van Bourgondi&euml;</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling3.png">
+						<p>Imperium gaat de winter vieren met een spannende familievoorstelling.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
@@ -72,37 +77,37 @@
 				<h1>Voorstellingen</h1>
                     <div class="block-content">
 						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
+						<p><b>Zinsbegoocheling</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling4.png">
 						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
 						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
+						<p><b>Vrede</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling5.png">
+						<p>Vrede is een schrijnend hilarische voorstelling over de absurde uren na een overlijden.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
 						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
+						<p><b>Moord in de kerststal</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling6.png">
+						<p>In Bethlehem loopt alles verkeerd. Jozef de Timmerman uit Nazareth en zijn zwangere vriendin Maria vinden nergens een plek om te slapen.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
 						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
+						<p><b>Mistero Buffo</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling7.png">
+						<p>&quot;Mistero Buffo&quot; is een bundel vertellend toneel waarin het leven van Jezus Christus wordt gezien door de man van de straat.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
 						<div class="voorstelling">
-						<p><b>Liefdes lied</b></p>
-						<img class="image-responsive image-center" src="http://via.placeholder.com/230x160">
-						<p>Laat je meeslepen door leugens en bedrog, door komische en tragische streken en door liefde en doodsverachting.</p>
+						<p><b>Kaatje is verdronken</b></p>
+						<img class="image-responsive image-center" src="images/newvoorstelling8.png">
+						<p>Alex van Warmerdams humoristisch polderdrama over ontluikende seksualiteit en onderdrukte verlangens.</p>
 						<p class="voorstelling-leesmeer"><b>Lees meer</b></p>
 						
 						</div>
@@ -118,7 +123,7 @@
                             2312 XR Leiden<br>
                             071 5141035</div></li>
                     <li>
-                        <p><a href="reserveren.html">Contact</a></p></li>
+                        <p><a href="contact.html">Contact</a></p></li>
                     <li>Social Media<br><br>
                         <img src="images/fb.png"/>
                         <img src="images/insta.png"/>

@@ -2,7 +2,7 @@
 <html lang="nl">
     <head>
         <meta charset="utf-8"/>
-        <title>Imperium in progress</title>
+        <title>Reserveren</title>
         <link rel="stylesheet" type="text/css" href="style/style.css" />
     </head>
     <body>
@@ -11,27 +11,35 @@
                 <div id="1stegedeeltehead">
                     <div id="Zwartbalk">
                     </div>
-                    <div id="WelkomsBericht">
+					<div id="WelkomsBericht">
                     </div>
                 </div>
                 <div id="logo">
-                    <img class="logo-image" src="images/logoheader.png" alt="Logo">
+                    <a href="home.html"><img class="logo-image" src="images/logoheader.png" alt="Logo"></a><!-- escape hatch naar home -->
                     <img class="ribbon" src="images/logoheader2.png"/>
                     <!-- <img src="images/header2egedeelte.png" alt="Logo2"> -->
                 </div>	  
                 <div id="menubar">
                     <ul id="menu">
-                        <li><a href="reserveren.html">Over Imperium</a></li>
-                        <li><a href="reserveren.html">Voorstellingen</a></li>
-                        <li><a href="reserveren.html">Gallerij</a></li>
+                        <li><a href="over.html">Over Imperium</a></li>
+                        <li class="subNav"><a href="voorstellingen.html">Voorstellingen</a>
+						<ul id="submenu">
+							<li><a href="liefdeslied.html">Liefdes Lied</a></li><br>
+							<li>Papieren Kroon</li><br>
+							<li>Prinses van Bourgondi&euml;</li><br>
+							<li>Zinsbegoocheling</li><br>
+							<li>Vrede</li><br>
+							<li>Moord in de kerststal</li><br>
+						</ul>
+                        <li><a href="gallerij.html">Gallerij</a></li>
                         <li><a href="reserveren.html">Reserveren</a></li>
-                        <li><a href="reserveren.html">Doneren</a></li>
+                        <li><a href="doneren.html">Doneren</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
             </div>
             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><b>Reserveren</b></li>
             </ul>
             <div id="site_content">
@@ -39,27 +47,27 @@
                 <h1>Reservering</h1>
                 <div> 
                     <div class="reserveringplaatje">
-                        <div class="reservering-beschrijving">hallo</div>
+                        <div class="reservering-beschrijving">Vrijdag 23 maart om 17:30<br>Liefdes Lied</div>
                         <img src="images/1.png"/>
                     </div>
                     <div class="reserveringplaatje"> 
-                        <div class="reservering-beschrijving">hallo</div>
+                        <div class="reservering-beschrijving">Vrijdag 24 maart om 17:30<br>De papieren kroon</div>
                         <img src="images/2.png"/>
                     </div>
                     <div class="reserveringplaatje"> 
-                        <div class="reservering-beschrijving">hallo</div>
+                        <div class="reservering-beschrijving">Vrijdag 25 maart om 17:30<br>Prinses van Bourgondi&euml;</div>
                         <img src="images/3.png"/>
                     </div>
                     <div class="reserveringplaatje"> 
-                        <div class="reservering-beschrijving">hallo</div>
+                        <div class="reservering-beschrijving">Vrijdag 29 maart om 20:30<br>Zinsbegoocheling</div>
                         <img src="images/4.png"/>
                     </div>
                     <div class="reserveringplaatje">
-                        <div class="reservering-beschrijving">hallo</div>					
+                        <div class="reservering-beschrijving">Vrijdag 30 maart om 20:30<br>Vrede</div>					
                         <img src="images/5.png"/>
                     </div>
                     <div class="reserveringplaatje"> 
-                        <div class="reservering-beschrijving">hallo</div>
+                        <div class="reservering-beschrijving">Vrijdag 31 maart om 20:30<br>Moord in de kerststal</div>
                         <img src="images/6.png"/>
                     </div>
                     <div class="clearfix"></div>
@@ -95,7 +103,7 @@
                             2312 XR Leiden<br>
                             071 5141035</div></li>
                     <li>
-                        <p><a href="reserveren.html">Contact</a></p></li>
+                        <p><a href="contact.html">Contact</a></p></li>
                     <li>Social Media<br><br>
                         <img src="images/fb.png"/>
                         <img src="images/insta.png"/>

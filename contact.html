@@ -2,7 +2,7 @@
 <html lang="nl">
     <head>
         <meta charset="utf-8"/>
-        <title>Imperium in progress</title>
+        <title>Contact pagina</title>
         <link rel="stylesheet" type="text/css" href="style/style.css" />
     </head>
     <body>
@@ -10,39 +10,47 @@
             <div id="header">
                 <div id="1stegedeeltehead">
                     <div id="Zwartbalk">
-                        <!-- extra balk voor positionering text -->
                     </div>
-                    <div id="WelkomsBericht">
-                        <!-- Welkoms text in header 1ste gedeelte -->
-                        <strong>Welkom op de home pagina van Imperium!</strong>
+					<div id="WelkomsBericht">
                     </div>
                 </div>
                 <div id="logo">
-                    <img class="logo-image" src="images/logoheader.png" alt="Logo">
+                    <a href="home.html"><img class="logo-image" src="images/logoheader.png" alt="Logo"></a><!-- escape hatch naar home -->
                     <img class="ribbon" src="images/logoheader2.png"/>
                     <!-- <img src="images/header2egedeelte.png" alt="Logo2"> -->
                 </div>	  
                 <div id="menubar">
                     <ul id="menu">
-                        <li><a href="reserveren.html">Over Imperium</a></li>
-                        <li><a href="reserveren.html">Voorstellingen</a></li>
-                        <li><a href="reserveren.html">Gallerij</a></li>
+                        <li><a href="over.html">Over Imperium</a></li>
+                        <li class="subNav"><a href="voorstellingen.html">Voorstellingen</a>
+						<ul id="submenu">
+							<li><a href="liefdeslied.html">Liefdes Lied</a></li><br>
+							<li>Papieren Kroon</li><br>
+							<li>Prinses van Bourgondi&euml;</li><br>
+							<li>Zinsbegoocheling</li><br>
+							<li>Vrede</li><br>
+							<li>Moord in de kerststal</li><br>
+						</ul>
+                        <li><a href="gallerij.html">Gallerij</a></li>
                         <li><a href="reserveren.html">Reserveren</a></li>
-                        <li><a href="reserveren.html">Doneren</a></li>
+                        <li><a href="doneren.html">Doneren</a></li>
                     </ul>
                     <div class="clearfix"></div>
                 </div>
             </div>
             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><b>Contact</b></li>
             </ul>
 			
             <div id="site_content">
 				<h1>Contact</h1>
+				</br>
+			</br>
                     <div class="block-content">
 						<div class="width-50">
-						<p>Via onderstaand formulier is het mogelijk om een bericht te sturen naar Imperium. Dit formulier is niet bedoeld voor het reserveren van kaarten. Dat kan via <b>hier</b>.</p>
+						<p>Via onderstaand formulier is het mogelijk om een bericht te sturen naar Imperium. 
+						Dit formulier is niet bedoeld voor het reserveren van kaarten. Dat kan via <a href="voorstellingen.html"><b>hier</b></a>.</p>
 						<form class="contactform">
 						<p>Naam: <input type="text" placeholder="Vul je naam in"/></p>
 						<p>Achternaam: <input type="text" placeholder="Vul je achternaam in"/></p>
@@ -66,10 +74,12 @@
 					</div>
 					
 					<div class="clearfix"></div>
+					
 				
 			</div>
 			
-			
+			</br>
+			</br>
 			<div id="footer" >
                 <ul class="footermenu">
                     <li><img class="float-left" src="images/logolinksonder.png"/> <div class="float-left footer-contact">
@@ -78,7 +88,7 @@
                             2312 XR Leiden<br>
                             071 5141035</div></li>
                     <li>
-                        <p><a href="reserveren.html">Contact</a></p></li>
+                        <p><a href="contact.html">Contact</a></p></li>
                     <li>Social Media<br><br>
                         <img src="images/fb.png"/>
                         <img src="images/insta.png"/>
